@@ -12445,7 +12445,17 @@ exports.default = void 0;
 //
 //
 var _default = {
-  props: ["icon", "iconPosition"]
+  props: {
+    icon: {},
+    iconPosition: {
+      type: String,
+      default: "left",
+      validator: function validator(value) {
+        //属性检查器
+        return value === "left" || value === "right";
+      }
+    }
+  }
 };
 exports.default = _default;
         var $3f76be = exports.default || module.exports;
@@ -12553,7 +12563,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65220" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59125" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
