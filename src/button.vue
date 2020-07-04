@@ -49,11 +49,9 @@ export default {
   &:hover {
     border-color: var(--border-color-hover);
   }
-
   &:active {
     background-color: var(--button-active-bg);
   }
-
   &:focus {
     outline: none;
   }
@@ -68,14 +66,14 @@ export default {
     > .content {
       order: 1;
     }
-    .loading {
-      animation: spin 2s infinite linear;
-    }
     > .icon {
       order: 2;
       margin-left: 0.1em;
       margin-right: 0;
     }
+  }
+  .loading {
+    animation: spin 2s infinite linear;
   }
 }
 </style>
